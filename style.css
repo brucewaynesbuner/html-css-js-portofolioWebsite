@@ -61,3 +61,20 @@ a:hover {
     font-size: 2rem;
     
 }
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none; /* Hide hamburger menu by default */
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+
