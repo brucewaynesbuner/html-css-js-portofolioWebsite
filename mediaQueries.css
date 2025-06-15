@@ -41,13 +41,6 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
-    border-radius: 2rem;
-    /* Removed overflow: hidden; to ensure images are fully visible */
-  }
-  .section__pic-container img {
-     width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
   }
   .about-containers {
     margin-top: 0;
@@ -95,19 +88,24 @@
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+    margin-bottom: 5rem;
   }
+  
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    display: flex;
     justify-content: center;
-    border-radius: 2rem;
-    overflow: hidden;
+    align-items: center;
   }
   .section__pic-container img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
+    height: auto;
+    object-fit: contain;
+    display: block;
   }
   .section__text__p2 {
     font-size: 1.25rem;

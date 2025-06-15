@@ -169,17 +169,16 @@ section {
   height: 80vh;
 }
 
+.section__pic-container img:first-child {
+  border-radius: 2rem;
+}
+
+
 .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
-  border-radius: 2rem;
-  overflow: hidden;
-}
-
-.section__pic-container img {
-  border-radius: 2rem;
+  margin: 0 auto;
 }
 
 .section__text {
@@ -187,12 +186,19 @@ section {
   text-align: center;
 }
 
+/* Make the second image in .section__pic-container smaller */
+.section__pic-container img:nth-child(2) {
+  width: 225px;
+  height: auto;
+  border-radius: 2rem;
+}
+
 .section__text p {
   font-weight: 600;
 }
 
 .section__text__p1 {
-  text-align: left;
+  text-align: center;
 }
 
 .section__text__p2 {
@@ -290,10 +296,8 @@ section {
 }
 
 .about-pic {
-   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  border-radius: 2rem;
+  object-fit: fill;
 }
 
 .arrow {
