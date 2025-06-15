@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaQueries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Desktop Navigation -->
@@ -38,7 +39,100 @@
       </div>
     </div>
   </nav>
-     <script src="script.js"></script>
-</body>
 
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="your-photo.jpg" alt="Tapiwa Masarira profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Tapiwa Masarira</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2">Download CV</button>
+        <button class="btn btn-color-1">Contact Info</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="your-about-photo.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>Insert your bio or background here...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="skill-card">
+          <h2>Web Development</h2>
+          <p>Building websites using HTML, CSS and JS.</p>
+        </div>
+        <div class="skill-card">
+          <h2>Graphic Design</h2>
+          <p>Creating visual content using tools like Photoshop.</p>
+        </div>
+        <div class="skill-card">
+          <h2>Social Media Management</h2>
+          <p>Managing online presence across social platforms.</p>
+        </div>
+        <!-- Add more skill cards as needed -->
+      </div>
+      <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+ <!-- Projects Section -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="your-project-image.jpg" alt="Project 1">
+      <h3>Project Title</h3>
+      <div class="btn-container">
+        <a href="https://github.com/your-repo" target="_blank">
+          <button class="btn btn-color-2">GitHub</button>
+        </a>
+        <a href="https://your-live-demo.com" target="_blank">
+          <button class="btn btn-color-1">Live Demo</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Duplicate project-card blocks for more projects -->
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info">
+      <!-- Add contact form or details here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2025 Tapiwa Masarira</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
