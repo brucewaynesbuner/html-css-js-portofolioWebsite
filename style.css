@@ -138,11 +138,11 @@ a:hover {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:nth-child(2) {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:last-child {
   transform: none;
 }
 
@@ -171,9 +171,14 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 1000px;
-  width: 1000px;
+  height: 400px;
+  width: 400px;
   margin: auto 0;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.section__pic-container img {
   border-radius: 2rem;
 }
 
@@ -286,12 +291,25 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+.about-pic {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  max-width: 300px;
+  max-height: 350px;
+  margin: 0 auto;
 }
 
 .details-container {
@@ -307,12 +325,6 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
@@ -396,7 +408,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -430,4 +442,44 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* CAROUSEL STYLES */
+
+.skills-carousel {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  background: rgb(53, 53, 53);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgb(0, 0, 0);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  font-size: 20px;
+}
+
+.slick-dots {
+  margin-top: 1rem;
+}
+
+.slick-dots li button:before {
+  color: rgb(163, 163, 163);
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(53, 53, 53);
 }
