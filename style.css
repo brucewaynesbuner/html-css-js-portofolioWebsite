@@ -175,6 +175,7 @@ section {
 
 
 .section__pic-container {
+  padding-top: 68px;
   display: flex;
   height: 400px;
   width: 400px;
